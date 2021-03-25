@@ -80,7 +80,8 @@ test:
 # for a full overview on how database connection configuration can be specified.
 #
 production:
-  <<: *default
-  database: portfolio_app_api_production
-  username: portfolio_app_api
-  password: <%= ENV['PORTFOLIO_APP_API_DATABASE_PASSWORD'] %>
+  # <<: *default
+  # database: portfolio_app_api_production
+  # username: portfolio_app_api
+  # password: <%= ENV['PORTFOLIO_APP_API_DATABASE_PASSWORD'] %>
+  url: <%= ENV['DATABASE_URL'] %>
